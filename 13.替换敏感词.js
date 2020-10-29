@@ -3,5 +3,9 @@ let str = "然后，正则表达式在各种计算机语言或各种应用领域
 // 把正则 替换成  "*";
 // let reg = /正则/g;
 let reg =  /正则|计算机/g;;
-let newStr =  str.replace(reg,"*");
+// let newStr =  str.replace(reg,"*");
+let newStr = str.replace(reg,function(arg){
+    // 会把符合规则的字符放入arg
+    console.log(arg);
+})
 console.log(newStr);
