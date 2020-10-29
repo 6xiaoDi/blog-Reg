@@ -13,6 +13,9 @@ function getNumber(str){
             }
         }
     }
-    console.log(arr);
+    if(temp!=="")
+        arr.push(temp);
+    return arr;
 }
 let res =  getNumber(str);
+console.log(res);
