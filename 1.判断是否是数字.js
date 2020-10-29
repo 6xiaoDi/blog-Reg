@@ -5,10 +5,13 @@ function getNumber(str){
     let arr = [];
     for(let i=0;i<str.length;i++){
         if(!isNaN(str[i])){
-            console.log("数字",str[i]);
+            // console.log("数字",str[i]);
+            temp+=str[i];
         }else{
-            console.log("非数字",str[i]);
+            // console.log("非数字",str[i]);
+            arr.push(temp);
         }
     }
+    console.log(arr);
 }
 let res =  getNumber(str);
