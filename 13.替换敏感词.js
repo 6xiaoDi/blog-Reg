@@ -6,6 +6,7 @@ let reg =  /正则|计算机/g;;
 // let newStr =  str.replace(reg,"*");
 let newStr = str.replace(reg,function(arg){
     // 会把符合规则的字符放入arg
-    console.log(arg);
+    // console.log(arg);
+    return "*".repeat(arg.length);
 })
 console.log(newStr);
