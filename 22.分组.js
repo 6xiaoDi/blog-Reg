@@ -1,4 +1,5 @@
-let str = "fdsabc123fdsfds444";
+// let str = "fdsabc123fdsfds444";
+let str = "fdsabc123fdsfdsabc444";
 // let reg = /abc\d+/g;
 let reg = /(abc)(\d+)/g; // 分组取数据
 let res =  str.match(reg);
